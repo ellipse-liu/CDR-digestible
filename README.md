@@ -43,7 +43,7 @@ Where <path_to_config.ini> is the path to the folder that you'd like the templat
 
     C:\Users\name\sub-folder\sub-folder\name_of_config.ini
 
-Once you have your default .ini, configure the arguments according to the INTRO_TO_INI.md file in this repo.  You only need to modify the arguments in the [data], [global_settings], [irf_name_map], and [model_] categories; arguments in [cdr_settings] are fine for Reading time data models.
+Once you have your default .ini, configure the arguments according to the official [documentation](https://cdr.readthedocs.io/en/latest/config.html)  You only need to modify the arguments in the [data], [global_settings], [irf_name_map], and [model_] categories; arguments in [cdr_settings] of the example_config.ini are fine for Reading time data models.
 
 After your .ini file is updated according to your specifications, you can run the model by typing this line of code into the terminal.
 
