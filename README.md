@@ -42,3 +42,15 @@ python -m cdr.bin.create_config > <path_to_config.ini>
 Where <path_to_config.ini> is the path to the folder that you'd like the template .ini file to be created in. This path should look something like this
 
     C:\Users\name\sub-folder\sub-folder\name_of_config.ini
+
+Once you have your default .ini, configure the arguments according to the INTRO_TO_INI.md file in this repo.  You only need to modify the arguments in the [data], [global_settings], [irf_name_map], and [model_] categories; arguments in [cdr_settings] are fine for Reading time data models.
+
+After your .ini file is updated according to your specifications, you can run the model by typing this line of code into the terminal.
+
+    python -m cdr.bin.train <path_to_config.ini>
+
+You should see the model begin training. After it is done running, plot the model performance with.
+
+    python -m cdr.bin.plot <path_to_config.ini> -m <model_name>
+
+If you check the directory you specified in [global_settings], you should now see a folder with the plots for your model.
